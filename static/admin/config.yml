@@ -8,8 +8,6 @@ public_folder: assets
 collections:
   - name: config
     label: Configs
-    folder: 'content/config'
-    create: false
     files:
       - label: "Home Page"
         name: "homepage-config"
