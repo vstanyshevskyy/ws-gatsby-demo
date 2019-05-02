@@ -4,6 +4,7 @@ import "./index.less"
 import User from "../components/user/"
 
 export default ({ data }) => {
+  console.log(data);
   const users = data.allRandomUser.edges;
   return (
     <div className="users-container">
@@ -13,7 +14,7 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-  query RandomUserQuery {
+  query HomePageData {
     allRandomUser {
       edges {
         node {
