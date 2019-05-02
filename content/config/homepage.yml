@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: vstanyshevskyy/ws-gatsby-demo
+
+media_folder: static/assets
+public_folder: assets
+
+collections:
+  - name: config
+    label: Configs
+    folder: 'content/config'
+    create: false
+    files:
+      - label: "Home Page"
+        name: "homepage-config"
+        file: "content/config/homepage.yml"
+        fields:
+          - { name: title, label: Title }
+          - { name: copyright, label: Copyright }
