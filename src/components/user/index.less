@@ -1,3 +1,32 @@
-body {
-  background-color: red;
+.user {
+  width: 100%;
+  max-width: ~"calc(100%/3 - 20px)";
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: 5px;
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: #eee; 
+  }
+
+  @media screen and (max-width: 600px) {
+    max-width: ~"calc(100%/2 - 20px)";
+  }
+
+  @media screen and (max-width: 300px) {
+    max-width: ~"calc(100% - 20px)";
+  }
+}
+
+.user__photo {
+  border-radius: 50%;
+}
+
+.user__name {
+  text-transform:capitalize;
+  font-size: 16px;
+  font-weight: 400;
 }

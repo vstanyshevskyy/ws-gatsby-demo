@@ -1,11 +1,12 @@
 import React from "react"
 import { graphql } from 'gatsby'
+import "./index.less"
 import User from "../components/user/"
 
 export default ({ data }) => {
   const users = data.allRandomUser.edges;
   return (
-    <div>
+    <div className="users-container">
       {users.map((user, i) => <User user={user.node} />)}
     </div>
   );
