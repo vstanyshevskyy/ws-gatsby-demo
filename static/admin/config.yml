@@ -7,9 +7,13 @@ public_folder: assets
 
 collections:
   - name: config
-    label: Config
+    label: Configs
     folder: 'content/config'
     create: false
-    fields:
-      - { name: title, label: Title }
-      - { name: copyright, label: Copyright }
+    files:
+      - label: "Home Page"
+        name: "homepage-config"
+        file: "content/config/homepage.yml"
+        fields:
+          - { name: title, label: Title }
+          - { name: copyright, label: Copyright }
